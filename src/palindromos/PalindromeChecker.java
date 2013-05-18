@@ -1,19 +1,22 @@
 package palindromos;
 
 public class PalindromeChecker {
-    
-    public boolean isPalindrome(Integer candidate) {      
-        if (candidate < 9) {
-            return true;
-        } else {           
-           return checkCandidate(candidate.toString());
-        }
+
+
+    public boolean isPalindrome(Integer candidate) {
+        return checkCandidate(candidate.toString());
     }
 
     public boolean isPalindrome(String candidate) {
-        return isPalindrome(Integer.parseInt(candidate));
+        try {
+            int intCandidate = Integer.parseInt(candidate);
+            return isPalindrome(intCandidate);
+        } catch (NumberFormatException e){
+            return checkCandidate(candidate);
+        }
+
     }
-    
+
     private boolean checkCandidate(String candidate) {
         if (palindroma(candidate, 0, candidate.length() - 1)) {
             return true;
