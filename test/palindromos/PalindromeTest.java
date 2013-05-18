@@ -4,28 +4,16 @@
  */
 package palindromos;
 
-import org.junit.After;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- *
- * @author usuario
- */
 public class PalindromeTest {
     PalindromeChecker palindromeChecker;
-    
-    public PalindromeTest() {
-    }
     
     @Before
     public void setUp() {
         palindromeChecker = new PalindromeChecker();
-    }
-    
-    @After
-    public void tearDown() {
     }
 
     @Test
