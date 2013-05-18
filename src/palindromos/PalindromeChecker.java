@@ -10,6 +10,10 @@ public class PalindromeChecker {
         }
     }
 
+    public boolean isPalindrome(String candidate) {
+        return isPalindrome(Integer.parseInt(candidate));
+    }
+    
     private boolean checkCandidate(String candidate) {
         if (palindroma(candidate, 0, candidate.length() - 1)) {
             return true;
