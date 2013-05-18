@@ -29,4 +29,22 @@ public class PalindromeNBasedCheckerTest {
         int candidate = 1234;
         assertFalse(new PalindromeNBasedChecker().isPalindrome(candidate, 16));
     }
+    
+    @Test
+    public void twoBasedNoPalindrome() {
+        int candidate = 1234;
+        assertFalse(new PalindromeNBasedChecker().isPalindrome(candidate, 2));
+    }
+    
+    @Test
+    public void twoBasedPalindrome() {
+        int candidate = 273;
+        assertTrue(new PalindromeNBasedChecker().isPalindrome(candidate, 2));
+    }
+    
+    @Test
+    public void sixteenthBasedPalindrome2() {
+        int candidate = 273;
+        assertTrue(new PalindromeNBasedChecker().isPalindrome(candidate, 16));
+    }
 }

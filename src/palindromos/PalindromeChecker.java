@@ -2,7 +2,6 @@ package palindromos;
 
 public class PalindromeChecker {
 
-
     public boolean isPalindrome(Integer candidate) {
         return checkCandidate(candidate.toString());
     }
@@ -14,7 +13,6 @@ public class PalindromeChecker {
         } catch (NumberFormatException e){
             return checkCandidate(candidate);
         }
-
     }
 
     private boolean checkCandidate(String candidate) {
