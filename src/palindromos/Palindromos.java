@@ -1,19 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package palindromos;
 
-/**
- *
- * @author usuario
- */
+
 public class Palindromos {
 
-    /**
-     * @param args the command line arguments
-     */
+    
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        int palindromeCandidate= Integer.parseInt(args[1]);
+        System.out.println(new PalindromeChecker().isPalindrome(palindromeCandidate));
     }
 }
