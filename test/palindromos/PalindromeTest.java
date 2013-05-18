@@ -13,10 +13,10 @@ import org.junit.Test;
  *
  * @author usuario
  */
-public class PalindromosTest {
+public class PalindromeTest {
     PalindromeChecker palindromeChecker;
     
-    public PalindromosTest() {
+    public PalindromeTest() {
     }
     
     @Before
@@ -48,7 +48,7 @@ public class PalindromosTest {
     
     @Test
     public void withLeftZeroCandidate() {
-        int candidate = 01210; 
+        String candidate = "01210";
         assertFalse(palindromeChecker.isPalindrome(candidate));
     }
 }
